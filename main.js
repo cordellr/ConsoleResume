@@ -1,4 +1,18 @@
-console.log("Name: Cordell Rainock");
+function displayPosition(company, title, description) {
+    console.log("* " + company + ": " + title + "-" + description);
+}
+
+function displaySkill(skill, isCool) {
+    if (isCool) {
+        console.log("* BAM: " + skill);
+    } else {
+        console.log("* " + skill);
+    }
+}
+
+let nameLabel = "name";
+let upper = nameLabel.toUpperCase();
+console.log(upper + ": Cordell Rainock");
 console.log("Career: Entrepreneur");
 console.log("Description : BYU Business Strategy Alumni and Entrepreneur");
 console.log(" ");
@@ -9,12 +23,12 @@ console.log("* mountain biking");
 console.log("* golf");
 console.log(" ");
 console.log("My Previous Experience:");
-console.log("* Owner of Archeio Systems--an archive imaging technology company");
-console.log("* Pricing analyst at Intel");
-console.log("* TA for business communications class");
+displayPosition("Archeio Systems", "Owner", "an archive imaging technology company");
+displayPosition("Intel", "Pricing Analyst","performed pricing analysis");
+displayPosition("BYU", "TA", "business communications class");
 console.log(" ");
 console.log("My Skills:");
-console.log("* UX/UI");
-console.log("* economic/strategic analysis");
-console.log("* HTML, CSS");
-console.log("* Excel, PowerPoint, Word");
+displaySkill("UX/UI", true);
+displaySkill("economic/strategic analysis", true);
+displaySkill("HTML, CSS", false);
+displaySkill("Excel, PowerPoint, Word", false);
